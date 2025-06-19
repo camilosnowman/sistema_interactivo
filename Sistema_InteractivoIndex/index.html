@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- Esto le dice al navegador que vamos a usar HTML5, que es una versión moderna del lenguaje HTML -->
+
+<html lang="es"> <!-- Empieza el documento HTML y dice que está en español -->
+
+<head> <!-- Esta parte es como el cerebro del sitio -->
+    <meta charset="UTF-8"> <!-- Ayuda a que se vean bien los acentos y letras especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página se vea bien en celulares y tabletas -->
+    <title>Calculadora de Descuentos</title> <!-- El título que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="styles.css"> <!-- Aquí conectamos el archivo de estilos CSS para que se vea bonito -->
+</head>
+
+<body> <!-- Aquí está el cuerpo de la página, lo que el usuario ve -->
+
+    <div class="container"> <!-- Un recuadro para mantener todo ordenado y bonito -->
+        <h1>Datos Primarios</h1> <!-- El título grande en la parte de arriba -->
+
+        <!-- Aquí empieza el formulario para que el usuario escriba su nombre y edad -->
+        <form id="datosPrimarios">
+            <label for="nombre">Por favor ingresa su Nombre:</label> <!-- Etiqueta que dice al usuario qué debe escribir -->
+            <input type="text" id="nombre" required> <!-- Lugar para escribir el nombre -->
+
+            <label for="edad">Por favor ingresa tu Edad:</label> <!-- Otra etiqueta -->
+            <input type="number" id="edad" required> <!-- Lugar para escribir la edad -->
+
+            <button type="submit">Mostrar información </button> <!-- Botón para enviar los datos -->
+        </form>
+
+        <div id="resultado"></div> <!-- Aquí aparecerá el resultado, como el nombre y edad escritos -->
+    </div>
+
+    <script src="sistema_interactivo.js"></script> <!-- Conecta el archivo JavaScript que hace que la página funcione de verdad -->
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* === ESTILOS BASE para todos los tamaños === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Se adapta al tamaño de la pantalla */
+    max-width: 600px; /* No crece más que esto en pantallas grandes */
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%; /* Que ocupe todo el ancho en móviles */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* === MEDIA QUERY para TABLETAS y celulares (pantallas medianas) === */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 30px; /* Más espacio interno */
+    }
+
+    button {
+        width: auto; /* Botón más pequeño */
+        padding: 12px 24px;
+    }
+
+    input {
+        font-size: 1.1em; /* Letras un poco más grandes */
+    }
+}
+
+/* === MEDIA QUERY para PANTALLAS GRANDES (computadoras) === */
+@media (min-width: 1025px) {
+    .container {
+        width: 70%; /* Más ancho, pero no exagerado */
+    }
+
+    button {
+        font-size: 1.1em;
+        padding: 14px 28px;
+    }
+
+    input {
+        font-size: 1.1em;
+    }
+}
